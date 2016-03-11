@@ -1,0 +1,8 @@
+START: TransactionCreated, DocumentsAdded
+TransactionCreated: DocumentsAdded
+DocumentsAdded: TransactionSigningStarted, UserDeclined
+TransactionSigningStarted: TransactionSigned
+TransactionSigned: TransactionCommited
+UserDeclined: END
+TransactionCommited: TransactionComplete
+TransactionComplete: END
